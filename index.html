@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William Houston Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="#home" class="site-brand">
+    <span class="site-brand-name">WILLIAM S. HOUSTON</span>
+    <span class="site-brand-role">Web and Software Developer</span>
+  </a>
+  <div class="site-nav-links">
+    <a href="#home" class="nav-link is-active" aria-current="true">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#resume" class="nav-link">Resume</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>WILLIAM S HOUSTON'S<br>INNOVATIVE WEB<br>DEVELOPMENT PORTFOLIO</h1>
+  <hr>
+  <p class="subtitle">Showcasing skills in web development and software development</p>
+
+  <div class="buttons">
+    <a href="#projects" class="btn">Explore My Work</a>
+    <a href="#about" class="btn outline">About Me</a>
+    <a href="#resume" class="btn">Download Resume</a>
+  </div>
+
+  <img src="Images/hero.jpeg" class="hero-img" alt="Portfolio hero showcase image">
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about-container">
+    <img src="Images/profile.jpg" class="profile" alt="William Houston profile portrait" id="profile-photo" style="cursor:pointer" onerror="this.onerror=null;this.src='Images/hero.jpg';">
+
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am a recent graduate with an Associate’s degree in Information Technology
+        with a passion for web development. I have honed my skills over the past year,
+        and I am excited to share my journey with you.
+      </p>
+      <a href="about-more.html" class="btn">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>PORTFOLIO PROJECTS</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Web Development Project</h3>
+      <img src="Images/project1.jpeg" alt="Web development project preview">
+      <p>Built a responsive website for a local business using front-end tooling. The solution includes a custom content banner and mobile-ready layout.</p>
+    </div>
+
+    <div class="card">
+      <h3>Graphic Design Project</h3>
+      <img src="Images/project2.jpeg" alt="Graphic design project preview">
+      <p>Designed a visual identity package for a media team, including concept mockups and client-ready graphics aligned to modern digital platforms.</p>
+    </div>
+
+    <div class="card">
+      <h3>Social Media Campaign</h3>
+      <img src="Images/project3.jpeg" alt="Social media campaign preview">
+      <p>Developed and launched a social campaign for a fitness brand. The campaign improved audience engagement, interactions, and reach across channels.</p>
+    </div>
+
+    <div class="card">
+      <h3>Web Application</h3>
+      <img src="Images/project4.jpeg" alt="Web application project preview">
+      <p>This is a web application prototype with dynamic components and user interactions. The interface focuses on responsive behavior and easy navigation.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="resume-section">
+  <div class="resume-panel">
+    <p class="resume-eyebrow">Professional Summary</p>
+    <h2>Download My Resume</h2>
+    <p class="resume-copy">
+      For a full overview of my education, technical skills, and project experience,
+      download my resume below.
+    </p>
+    <a href="Updated Resume.pdf" class="btn dark" download>Download Resume</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact reveal" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something meaningful.</h2>
+          <p class="section-copy">
+            Share your project goals or role details. I will follow up with a focused plan and timeline.
+          </p>
+          <ul class="social-list">
+            <li><a href="tel:+14022089885">+1 402-208-9885</a></li>
+            <li><a href="https://github.com/ghostdawg1313" target="_blank" rel="noreferrer noopener">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/william-houston-42221866" target="_blank" rel="noreferrer noopener">LinkedIn Profile</a></li>
+          </ul>
+          <a href="#home" class="btn back-to-top">Back To Top</a>
+        </div>
+
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formsubmit.co/w.stephenh@gmail.com"
+          method="POST"
+          novalidate
+        >
+          <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" id="formNext">
+
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" placeholder="Your company (optional)">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+
+<footer>
+  <p>© 2026 Houston IT Portfolio - All Rights Reserved</p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More About William Houston</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html#home" class="site-brand">
+    <span class="site-brand-name">WILLIAM S. HOUSTON</span>
+    <span class="site-brand-role">Web and Software Developer</span>
+  </a>
+  <div class="site-nav-links">
+    <a href="index.html#home" class="nav-link">Home</a>
+    <a href="index.html#about" class="nav-link is-active" aria-current="true">About</a>
+    <a href="index.html#projects" class="nav-link">Projects</a>
+    <a href="index.html#resume" class="nav-link">Resume</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
+  </div>
+</nav>
+
+<section class="about-more-hero">
+  <div class="about-more-wrap">
+    <p class="about-more-eyebrow">Extended Bio</p>
+    <h1>More About My Journey</h1>
+    <p class="about-more-intro">
+      Beyond technology, my story includes music, craftsmanship, family, and community. This page captures highlights adapted from my personal Google Sites About page.
+    </p>
+  </div>
+</section>
+
+<section class="about-more-content">
+  <div class="about-more-wrap about-more-grid">
+    <article class="about-more-card">
+      <h2>Musician, Producer, Songwriter</h2>
+      <img
+        class="about-more-photo"
+        src="Images/Piano.jpg"
+        alt="Piano performance"
+        loading="lazy"
+      >
+      <p>
+        I am the son of internationally known jazz drummer Curly Martin and the brother of Grammy Award winner Terrace Martin.
+        I am a producer, songwriter, and musician who plays multiple instruments. I started young and joined a band through the North Omaha Boys Club.
+      </p>
+      <p>
+        Today I am back in a band called Rhythm City, planning a reunion and continuing to share music that brings people together.
+      </p>
+    </article>
+
+    <article class="about-more-card">
+      <h2>Creative Projects</h2>
+      <div class="about-more-photo-grid">
+        <img
+          class="about-more-photo"
+          src="Images/patio 1.jpg"
+          alt="Patio project"
+          loading="lazy"
+        >
+        <img
+          class="about-more-photo"
+          src="Images/patio 2.jpg"
+          alt="Patio project detail"
+          loading="lazy"
+        >
+        <img
+          class="about-more-photo"
+          src="Images/zen area.jpg"
+          alt="Zen area"
+          loading="lazy"
+        >
+      </div>
+      <p>
+        During the pandemic, I discovered a passion for pallet woodworking. With online learning and consistency, I built pieces for our backyard and developed a practical design mindset.
+      </p>
+      <p>
+        I also enjoy creating spaces for outside lounging and meaningful conversation, along with exploring great food and local bar-and-grill spots.
+      </p>
+    </article>
+
+    <article class="about-more-card">
+      <h2>Family and Lifestyle</h2>
+      <div class="about-more-photo-grid">
+        <img
+          class="about-more-photo"
+          src="Images/Our Buddybrowneyes.jpg"
+          alt="Family and home life"
+          loading="lazy"
+        >
+        <img
+          class="about-more-photo"
+          src="Images/Rita and I.jpg"
+          alt="Rita and William"
+          loading="lazy"
+        >
+      </div>
+      <p>
+        My world includes my fiancee Rita and our dog Buddy. Together we prioritize family, travel, and quality time around our firepit, garden, and home.
+      </p>
+      <p>
+        We aim to visit as many states as possible and keep building memories through shared experiences.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="about-more-actions">
+  <div class="about-more-wrap">
+    <a href="index.html#about" class="btn">Back To Portfolio About</a>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+
+<footer>
+  <p>© 2026 Houston IT Portfolio - All Rights Reserved</p>
+</footer>
+
+<style>
+  .about-more-photo { cursor: pointer; }
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+  }
+  .lightbox.is-open { display: flex; }
+  .lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 48px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 10000;
+  }
+  .lightbox-close:hover { color: #e2725b; }
+</style>
+
+<script src="about-more.js"></script>
+
+</body>
+</html>
